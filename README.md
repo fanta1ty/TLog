@@ -1,8 +1,7 @@
 ![Logo](https://github.com/fanta1ty/TLog/blob/master/Logo/Logo.png)
 
 # TLog
-
-[![CI Status](https://img.shields.io/travis/fanta1ty/TLog.svg?style=flat)](https://travis-ci.org/fanta1ty/TLog)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-brightgreen)](https://developer.apple.com/swift/)
 [![Version](https://img.shields.io/cocoapods/v/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
 [![License](https://img.shields.io/cocoapods/l/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
 [![Platform](https://img.shields.io/cocoapods/p/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
