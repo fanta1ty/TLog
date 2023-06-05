@@ -1,3 +1,5 @@
+![Logo](https://github.com/fanta1ty/TLog/blob/master/Logo/Logo.png)
+
 # TLog
 
 [![CI Status](https://img.shields.io/travis/fanta1ty/TLog.svg?style=flat)](https://travis-ci.org/fanta1ty/TLog)
@@ -39,31 +41,37 @@ import TLog
 ```swift
 TLog.debug("Debug !!!")
 ```
+![Debug](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Debug.png)
 
 - For Error Logging:
 ```swift
 TLog.error("Error !!!")
 ```
+![Error](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Error.png)
 
 - For Info Logging:
 ```swift
 TLog.info("Info !!!")
 ```
+![Info](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Info.png)
 
 - For Server Logging:
 ```swift
 TLog.server("Server !!!")
 ```
+![Server](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Server.png)
 
 - For Verbose Logging:
 ```swift
 TLog.verbose("Verbose !!!")
 ```
+![Verbose](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Verbose.png)
 
 - For Warning Logging:
 ```swift
 TLog.warning("Warning !!!")
 ```
+![Warning](https://github.com/fanta1ty/TLog/blob/master/Screenshots/Warning.png)
 
 - Enable/Disable `TLog`:
 ```swift
