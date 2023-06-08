@@ -5,6 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
 [![License](https://img.shields.io/cocoapods/l/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
 [![Platform](https://img.shields.io/cocoapods/p/TLog.svg?style=flat)](https://cocoapods.org/pods/TLog)
+[![Email](https://img.shields.io/badge/contact-@thinhnguyen12389@gmail.com-blue)](thinhnguyen12389@gmail.com)
 
 ## Example
 
