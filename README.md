@@ -524,54 +524,6 @@ TLog.shared.minimumLevel = .warning
 - ✅ Set up environment-based configuration
 - ✅ Enable privacy protection for production
 
----
-
-## 📖 API Reference
-
-### Core Methods
-
-```swift
-// Instance methods with metadata support
-func trace(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-func debug(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-func info(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-func warning(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-func error(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-func critical(_ message: String, metadata: LogMetadata = [:], category: String? = nil)
-
-// Static methods (backward compatibility)
-static func debug(_ message: String)
-static func info(_ message: String)
-static func warning(_ message: String)
-static func error(_ message: String)
-static func verbose(_ message: String) // Maps to trace
-static func server(_ message: String)  // Maps to info with "SERVER" category
-
-// Async methods (iOS 13+)
-func traceAsync(_ message: String, metadata: LogMetadata = [:], category: String? = nil) async
-func debugAsync(_ message: String, metadata: LogMetadata = [:], category: String? = nil) async
-// ... other async methods
-
-// Convenience methods
-func error(_ error: Error, message: String = "Error occurred", category: String? = nil)
-func time<T>(_ operation: String, category: String? = nil, block: () throws -> T) rethrows -> T
-func timeAsync<T>(_ operation: String, category: String? = nil, block: () async throws -> T) async rethrows -> T
-```
-
-### Configuration Methods
-
-```swift
-func configure(for environment: Environment)
-func configure(with configuration: TLogConfiguration)
-func addDestination(_ destination: LogDestination)
-func removeAllDestinations()
-func enableFileLogging(fileName: String = "app.log")
-func enableNetworkLogging(endpoint: URL, authToken: String? = nil, minimumLevel: LogLevel = .error)
-func enableMemoryLogging(maxMessages: Int = 1000)
-func enablePrivacyProtection(settings: PrivacySettings = PrivacySettings())
-func enableHealthMonitoring()
-func configureConsole(showEmojis: Bool, showTimestamp: Bool, ...)
-```
 
 ---
 
@@ -919,16 +871,6 @@ func enableFileLogging(fileName: String = "app.log")
 func configureConsole(showEmojis: Bool, showTimestamp: Bool, ...)
 func getLogFileURL() -> URL?
 ```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
