@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "TLog",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "TLog",
@@ -13,7 +13,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "TLog"),
+            name: "TLog",
+            swiftSettings: [
+                .enableUpcomingFeature("BareSlashRegexLiterals"),
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableExperimentalFeature("StrictConcurrency"),
+                .define("TLOG_ENABLE_LOGGING", .when(configuration: .debug))
+            ]
+        ),
         .testTarget(
             name: "TLogTests",
             dependencies: ["TLog"]),
