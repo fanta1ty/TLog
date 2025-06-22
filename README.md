@@ -447,7 +447,7 @@ logger.enablePrivacyProtection(settings: privacySettings)
 
 | Platform | Minimum Version | Notes |
 |----------|----------------|-------|
-| iOS | 12.0+ | Full feature support |
+| iOS | 13.0+ | Full feature support |
 | macOS | 10.14+ | Full feature support |
 | tvOS | 12.0+ | Console and file logging |
 | watchOS | 5.0+ | Console logging only |
